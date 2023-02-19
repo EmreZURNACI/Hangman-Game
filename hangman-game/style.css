@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.options {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.4rem;
+    border: 1px solid goldenrod;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    background-color: goldenrod;
+}
+
+.btn:hover {
+    cursor: grab;
+}
+
+.alphabet button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.alphabet button:hover {
+    cursor: grab;
+}
+
+.alphabet {
+    width: 65%;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.btn_alphabet {
+    width: 55px;
+    height: 55px;
+}
+
+.firstRow,
+.secondRow {
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.thirdRow {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.firstRow button,
+.secondRow button,
+.thirdRow button {
+    transition: background-color 2s;
+    transition: border 1.5s;
+    font-size: 2.5rem;
+}
+
+.alphabet button:hover {
+    background-color: goldenrod;
+    border: 1px solid #f6b207;
+}
+
+.text {
+    width: 55%;
+    height: 15%;
+}
+
+.text span {
+    font-size: 3rem;
+}
+
+.man {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+
+.ustYatay,
+.diklik,
+.ip,
+.altYatay,
+.ustYatay,
+.vucut {
+    background-color: black;
+    position: absolute;
+}
+
+
+.ustYatay {
+    width: 70%;
+    height: 3rem;
+    top: 5%;
+}
+
+.diklik {
+    height: 90%;
+    width: 3rem;
+    top: 5%;
+}
+
+.altYatay {
+    width: 50%;
+    height: 3rem;
+    bottom: 5%;
+}
+
+.ip {
+    height: 16%;
+    width: 1.5rem;
+    right: 39.9%;
+    top: 8%
+}
+
+.circle {
+    border: 10px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: 34.8%;
+    top: 23%;
+    width: 100px;
+    height: 100px;
+}
+
+.vucut {
+    height: 24%;
+    width: 10px;
+    top: 33%;
+    right: 40.2%;
+}
+
+.solKol,
+.sagKol,
+.sagBacak,
+.solBacak {
+    height: 15%;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+.solKol {
+    top: 35%;
+    right: 45.5%;
+    transform: rotate(30deg);
+}
+
+.sagKol {
+    top: 35%;
+    right: 35.1%;
+    border-radius: 1rem;
+    transform: rotate(-30deg);
+}
+
+.solBacak {
+    top: 55%;
+    right: 45.5%;
+    transform: rotate(30deg);
+}
+
+.sagBacak {
+    top: 55%;
+    right: 35.1%;
+    transform: rotate(-30deg);
+}
+
+.playAgain {
+    position: absolute;
+    background-color: goldenrod;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.playAgainBTN {
+    display: inline-block;
+    width: 20%;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    z-index: 3;
+    height: 5rem;
+    background-color: black;
+    cursor: grab;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+
+}
+
+.displayNone {
+    opacity: 0;
+    pointer-events: none;
+}
